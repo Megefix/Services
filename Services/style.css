@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(0, 0, 0, 0.0001);
+}
+/*Header*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+}
+.header__title {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1.3px;
+
+  color: #fed136;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.header__link {
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fed136;
+}
+/*Main*/
+.Services {
+  margin-top: 110px;
+}
+.block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+}
+.services__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 75px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.services__img {
+  width: 70px;
+  height: 69px;
+  margin-left: 115px;
+}
+.services__item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 75px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.45px;
+  color: #222222;
+  justify-content: center;
+}
+.services__text {
+  width: 304px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: -0.35px;
+  color: #777777;
+}
+/*Contact us*/
+.contactus {
+  width: 100%;
+  height: 679px;;
+  background-color: #222222;
+  margin-top: 200px;
+  display:flex;
+  flex-direction: column;
+}
+.contactus__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #ffffff;
+  display:flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.contactus__block {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-left: 3%;
+}
+.input__list {
+  display: flex;
+  flex-direction: column;
+}
+.input__item {
+  width: 455px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.35px;
+  text-transform: uppercase;
+  color: #bbbbbb;
+  margin-bottom: 31px;
+}
+.input__spacial {
+  width: 458px;
+  height: 212px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -0.35px;
+  text-transform: uppercase;
+  margin-left: 5%;
+  color: #bbbbbb;
+}
+input::placeholder {
+  margin:0;
+  padding:0;
+}
+.button {
+  width: 242px;
+  height: 68px;
+  background: #fed136;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 42%;
+}
+@media screen and (max-width: 769px) {
+  .services__text {
+    font-size: 12px;
+    width: 250px;
+  }
+  .services__img {
+    margin-left: 90px;
+  }
+  .contactus {
+    margin-top: 90px;
+  }
+  .input__item {
+    width: 270px;
+    height: 40px;
+  }
+  .input__spacial {
+    width: 300px;
+    height: 183px
+  }
+  .button {
+    margin-left: 37%;
+  }
+}
+@media screen and ( max-width: 426px ) {
+  .header {
+    flex-direction: column;
+  }
+  .header__link {
+    margin-left: 15px;
+    font-size: 15px;
+  }
+  .Services {
+    margin-top: 50px;
+  }
+  .services__title {
+    font-size: 30px;
+  }
+  .block {
+		flex-wrap:wrap;
+    margin-top: 40px;
+  }
+  .services__block {
+    margin-top: 15px;
+  }
+  .contactus__block {
+    flex-direction: column;
+  }
+  .contactus {
+    margin-top: 70px;
+  }
+  .input__list {
+    justify-content: center ;
+    align-items: center;
+  }
+  .input__item {
+    width: 350px;
+  }
+  .input__spacial {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 31px;
+    width: 350px;
+  }
+  .button {
+    margin-left: 23%;
+    margin-top: 15px;
+  }
+}
